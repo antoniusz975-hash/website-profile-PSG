@@ -1,0 +1,428 @@
+
+/* PERTEMUAN 4: FINAL - DARK ORGANIC GREEN THEME */
+
+/* ==================== GENERAL STYLES ==================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #222629;
+  color: #F4F5F0;
+}
+
+a {
+  color: #F4F5F0;
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  color: #87C232;
+}
+
+.short-line {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #87C232;
+  margin: 10px 0 20px 0;
+}
+
+.center-line {
+  margin: 10px auto 40px auto;
+}
+
+/* ==================== BUTTON STYLES ==================== */
+
+.btn {
+  display: inline-block;
+  background: #87C232;
+  color: #222629;
+  padding: 12px 36px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #618930;
+  color: #FFFFFF;
+}
+
+.btn-white {
+  background: #F4F5F0;
+  color: #222629;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* ==================== LABEL STYLES ==================== */
+
+.label {
+  display: inline-block;
+  background: #87C232;
+  color: #222629;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 8px;
+}
+
+/* ==================== IMAGE STYLES ==================== */
+
+.placeholder {
+  background: #2C3233;
+  overflow: hidden;
+}
+
+.placeholder img,
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-frame {
+  border: 1px solid #618930;
+  padding: 12px;
+  background: #2C3233;
+}
+
+/* ==================== NAVBAR STYLES ==================== */
+
+.navbar {
+  background: #222629;
+  padding: 10px 10%;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #87C232;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+}
+
+.nav-links a {
+  color: #F4F5F0;
+}
+
+.nav-links a:hover {
+  color: #87C232;
+}
+
+/* ==================== HOME SECTION STYLES ==================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 50px 10%;
+  background: #222629;
+}
+
+.hero h1,
+.hero h2 {
+  font-size: 26px;
+  color: #87C232;
+}
+
+.hero-desc {
+  font-size: 12px;
+  margin: 20px 0;
+  max-width: 260px;
+  color: #C4C9BE;
+}
+
+.hero-photo {
+  width: 320px;
+  height: 340px;
+  margin-left: auto;
+}
+
+/* ==================== WHAT I DO SECTION STYLES ==================== */
+
+.services {
+  padding: 50px 10%;
+  background: #1B1F22;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+}
+
+.service-img {
+  height: 200px;
+  margin-bottom: 20px;
+  background: #2C3233;
+}
+
+.service h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #87C232;
+}
+
+.service p {
+  font-size: 11px;
+  color: #C4C9BE;
+}
+
+/* ==================== ABOUT ME SECTION STYLES ==================== */
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 10%;
+  background: #222629;
+}
+
+.about-photo {
+  width: 320px;
+  height: 340px;
+}
+
+.about-title {
+  font-size: 26px;
+  color: #87C232;
+}
+
+.about-text p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #F4F5F0;
+}
+
+.check-list {
+  list-style-type: "✔  ";
+  padding-left: 20px;
+  color: #87C232;
+}
+
+.check-list li {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+/* ==================== PORTFOLIO SECTION STYLES ==================== */
+
+.portfolio {
+  padding: 50px 10%;
+  background: #1B1F22;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+}
+
+.project-img {
+  height: 220px;
+  margin-bottom: 12px;
+  background: #2C3233;
+}
+
+.project h3 {
+  font-size: 18px;
+  color: #F4F5F0;
+}
+
+.center-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ==================== SKILLS SECTION STYLES ==================== */
+
+.skills {
+  padding: 30px 0 60px 0;
+  background: #222629;
+}
+
+.skills-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.skill-card {
+  background: #2C3233;
+  border: 1px solid #618930;
+  padding: 14px 10px;
+  color: #F4F5F0;
+}
+
+.skill-icon {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #87C232;
+}
+
+.skill-card h3 {
+  font-size: 11px;
+  margin-bottom: 8px;
+  color: #F4F5F0;
+}
+
+.skill-card p {
+  font-size: 9px;
+  color: #C4C9BE;
+}
+
+.arrow {
+  background: #618930;
+  width: 36px;
+  height: 42px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+/* ==================== CTA SECTION STYLES ==================== */
+
+.cta {
+  background: #1B1F22;
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.cta h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #87C232;
+}
+
+.cta .buttons {
+  justify-content: center;
+}
+
+/* ==================== FOOTER STYLES ==================== */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px 10%;
+  background: #222629;
+  color: #F4F5F0;
+}
+
+.footer-name {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: #87C232;
+}
+
+.copyright {
+  font-size: 9px;
+  margin-top: 20px;
+  color: #C4C9BE;
+}
+
+.footer-right p {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #F4F5F0;
+}
+
+.icon {
+  width: 30px;
+  font-size: 24px;
+  color: #87C232;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+
+  .navbar,
+  .hero,
+  .services,
+  .about-section,
+  .portfolio,
+  .cta,
+  .footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbar-inner {
+    justify-content: center;
+  }
+
+  .hero,
+  .about-section,
+  .services-grid,
+  .portfolio-grid,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo,
+  .about-photo {
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+/* Layar HP kecil (480px atau kurang) */
+
+@media (max-width: 480px) {
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
